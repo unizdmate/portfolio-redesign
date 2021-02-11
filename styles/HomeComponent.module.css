@@ -14,6 +14,7 @@
 .lead__img__container {
   background-image: url("/IMG01.jpg");
   min-height: 100vh;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
 }
 
 .contact__img__container {
@@ -24,6 +25,7 @@
 .projects__img__container {
   background-image: url("/IMG03.jpg");
   min-height: 500px;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
 }
 
 .closing__img__container {
@@ -135,6 +137,7 @@
 
   .lead__img__container {
     background-image: url("/IMG01-mob.jpg");
+    clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 100%);
   }
 
   .contact__img__container {
@@ -143,6 +146,7 @@
 
   .projects__img__container {
     background-image: url("/IMG03-mob.jpg");
+    clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 100%);
   }
 
   .closing__img__container {

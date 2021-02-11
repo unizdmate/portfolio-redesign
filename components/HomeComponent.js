@@ -35,7 +35,7 @@ const HomeComponent = () => {
       <section className={styles.contact__section}>
         <div className={styles.txt__container}>
           <Image
-            src="/more.svg"
+            src="/more01.svg"
             width={75}
             height={75}
             onContextMenu={(e) => e.preventDefault()}
@@ -45,7 +45,7 @@ const HomeComponent = () => {
           <p>Someone ready to work and willing to learn?</p>
           <p>Look no further!</p>
           <Image
-            src="/more.svg"
+            src="/more01.svg"
             width={50}
             height={50}
             onContextMenu={(e) => e.preventDefault()}
@@ -62,11 +62,25 @@ const HomeComponent = () => {
       </div>
 
       <section className={styles.projects__section}>
+        <Image
+          src="/more02.svg"
+          width={75}
+          height={75}
+          onContextMenu={(e) => e.preventDefault()}
+          onDragStart={(e) => e.preventDefault()}
+        />
         <p>
           All the projects I've ever worked on in one place, including college
           final thesis and personal projects.
         </p>
         <p>Feel free to check them out!</p>
+        <Image
+          src="/more02.svg"
+          width={50}
+          height={50}
+          onContextMenu={(e) => e.preventDefault()}
+          onDragStart={(e) => e.preventDefault()}
+        />
         <div className={styles.projects__btn}>
           <Link href="/projects">Projects</Link>
         </div>
