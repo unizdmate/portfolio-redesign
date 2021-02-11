@@ -45,6 +45,14 @@
   cursor: pointer;
 }
 
+.contact__fieldset input:focus {
+  outline: none;
+}
+
+.contact__fieldset textarea:focus {
+  outline: none;
+}
+
 @media only screen and (max-width: 800px) {
   .contact__form {
     align-items: center;
