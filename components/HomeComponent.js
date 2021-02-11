@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "../styles/HomeComponent.module.css";
 import ContactForm from "./ContactForm";
+import Link from "next/link";
 
 const HomeComponent = () => {
   return (
@@ -21,7 +22,9 @@ const HomeComponent = () => {
           like-minded coleagues. Thorough and precise at any given task, with
           keen interest in technology, web applications and user experience.
         </p>
-        <div className={styles.about__btn}>Read more</div>
+        <div className={styles.about__btn}>
+          <Link href="/about">Read more</Link>
+        </div>
       </section>
 
       <div className={styles.contact__img__container}>
@@ -51,7 +54,9 @@ const HomeComponent = () => {
           final thesis and personal projects.
         </p>
         <p>Feel free to check them out!</p>
-        <div className={styles.projects__btn}>Projects</div>
+        <div className={styles.projects__btn}>
+          <Link href="/projects">Projects</Link>
+        </div>
       </section>
 
       <div className={styles.closing__img__container}>
