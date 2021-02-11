@@ -25,9 +25,9 @@
 .navbar__items {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   list-style-type: none;
-  width: 40vw;
+  width: 30vw;
 }
 
 .navbar__item {
