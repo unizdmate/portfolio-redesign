@@ -1,6 +1,8 @@
 .contact__form {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .contact__fieldset {
@@ -8,8 +10,8 @@
   flex-direction: column;
   border: none;
   margin: 0;
-  padding: 0 10px;
-  min-width: 30vw;
+  padding: 0;
+  min-width: 25vw;
 }
 
 .contact__input {
@@ -18,7 +20,7 @@
   border-radius: 5px;
   font-size: 10px;
   padding: 5px;
-  width: 75%;
+  width: 100%;
 }
 
 .contact__txt__area {
@@ -27,12 +29,13 @@
   border-radius: 5px;
   font-size: 12px;
   padding: 5px;
+  width: 100;
 }
 
 .submit__btn {
   width: 120px;
   height: 30px;
-  margin-top: auto;
+  margin-top: 12px;
   border-radius: 5px;
   display: flex;
   align-items: center;
@@ -44,17 +47,12 @@
 
 @media only screen and (max-width: 800px) {
   .contact__form {
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
+    margin-top: 25px;
   }
 
   .contact__input {
     width: 100%;
-  }
-
-  .submit__btn {
-    margin-top: 10px;
   }
 
   .contact__fieldset {

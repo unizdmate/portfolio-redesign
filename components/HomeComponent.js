@@ -47,11 +47,11 @@ const HomeComponent = () => {
 
       <section className={styles.projects__section}>
         <p>
-          THIS IS WHERE THE PROJECTS BUTTON GOES Vestibulum eu risus arcu.
-          Vivamus faucibus dolor quis ex luctus, eu vestibulum felis commodo.
-          Proin in justo vel justo ornare pretium. Nam sed varius enim. Fusce
-          fringilla fringilla arcu, at finibus metus efficitur ac.
+          All the projects I've ever worked on in one place, including college
+          final thesis and personal projects.
         </p>
+        <p>Feel free to check out!</p>
+        <div className={styles.projects__btn}>Projects</div>
       </section>
 
       <div className={styles.closing__img__container}>
