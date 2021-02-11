@@ -132,6 +132,23 @@
   .closing__img__container {
     background-attachment: scroll;
   }
+
+  .lead__img__container {
+    background-image: url("/IMG01-mob.jpg");
+  }
+
+  .contact__img__container {
+    background-image: url("/IMG02-mob.jpg");
+  }
+
+  .projects__img__container {
+    background-image: url("/IMG03-mob.jpg");
+  }
+
+  .closing__img__container {
+    background-image: url("/IMG04-mob.jpg");
+  }
+
   .lead__img__caption,
   .contact__img__caption,
   .projects__img__caption,
