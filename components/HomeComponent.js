@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "../styles/HomeComponent.module.css";
+import ContactForm from "./ContactForm";
 
 const HomeComponent = () => {
   return (
@@ -35,6 +36,7 @@ const HomeComponent = () => {
           <p>Someone ready to work and willing to learn?</p>
           <p>Look no further!</p>
         </div>
+        <ContactForm />
       </section>
 
       <div className={styles.projects__img__container}>
@@ -51,6 +53,14 @@ const HomeComponent = () => {
           fringilla fringilla arcu, at finibus metus efficitur ac.
         </p>
       </section>
+
+      <div className={styles.closing__img__container}>
+        <div className={styles.closing__img__caption}>
+          <span className={styles.border}>
+            Front End Development done right!
+          </span>
+        </div>
+      </div>
     </>
   );
 };
