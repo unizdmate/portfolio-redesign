@@ -50,7 +50,7 @@ const HomeComponent = () => {
           All the projects I've ever worked on in one place, including college
           final thesis and personal projects.
         </p>
-        <p>Feel free to check out!</p>
+        <p>Feel free to check them out!</p>
         <div className={styles.projects__btn}>Projects</div>
       </section>
 
