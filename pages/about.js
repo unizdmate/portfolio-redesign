@@ -1,15 +1,15 @@
 import React from "react";
 import AboutmeComponent from "../components/AboutmeComponent";
 import { motion } from "framer-motion";
-import { HomePageFadeInVariants } from "../animations/variants";
+import { pageTransitionVariants } from "../animations/variants";
 
 const about = () => {
   return (
     <motion.div
-      layoutId="about"
-      variants={HomePageFadeInVariants}
+      variants={pageTransitionVariants}
       initial="initial"
       animate="animate"
+      exit="initial"
     >
       <AboutmeComponent />
     </motion.div>

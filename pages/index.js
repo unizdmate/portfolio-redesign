@@ -1,14 +1,14 @@
 import HomeComponent from "../components/HomeComponent";
-import { motion } from "framer-motion";
-import { HomePageFadeInVariants } from "../animations/variants";
+import { animate, motion } from "framer-motion";
+import { pageTransitionVariants } from "../animations/variants";
 
 export default function Home() {
   return (
     <motion.div
-      layoutId="home"
-      variants={HomePageFadeInVariants}
+      variants={pageTransitionVariants}
       initial="initial"
       animate="animate"
+      exit="initial"
     >
       <HomeComponent />
     </motion.div>

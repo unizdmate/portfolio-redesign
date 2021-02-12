@@ -1,14 +1,4 @@
-export const HomePageFadeInVariants = {
-  initial: {
-    opacity: 0,
-  },
-  animate: {
-    opacity: 1,
-    transition: { delay: 0.25 },
-  },
-};
-
-export const LeadImgVariants = {
+export const leadImgVariants = {
   initial: {
     scale: 0,
   },
@@ -18,14 +8,26 @@ export const LeadImgVariants = {
   },
 };
 
-export const NavLinkVariants = {
+export const navLinkVariants = {
   hover: {
     scale: 1.02,
   },
 };
 
-export const BtnVariants = {
+export const btnVariants = {
   hover: {
     scale: 1.02,
+  },
+};
+
+export const pageTransitionVariants = {
+  initial: {
+    opacity: 0,
+  },
+  animate: {
+    opacity: 1,
+  },
+  transition: {
+    duration: 1,
   },
 };

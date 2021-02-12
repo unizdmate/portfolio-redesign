@@ -1,6 +1,6 @@
 import styles from "../styles/ContactForm.module.css";
 import { motion } from "framer-motion";
-import { BtnVariants } from "../animations/variants";
+import { btnVariants } from "../animations/variants";
 
 const ContactForm = () => {
   return (
@@ -37,7 +37,7 @@ const ContactForm = () => {
         </fieldset>
         <motion.div
           className={styles.submit__btn}
-          variants={BtnVariants}
+          variants={btnVariants}
           whileHover="hover"
         >
           Submit

@@ -4,19 +4,15 @@ import ContactForm from "./ContactForm";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { LightAnimatedSVG, DarkAnimatedSVG } from "../animations/svg";
-import {
-  LeadImgVariants,
-  BtnVariants,
-  HomePageFadeInVariants,
-} from "../animations/variants";
+import { leadImgVariants, btnVariants } from "../animations/variants";
 
 const HomeComponent = () => {
   return (
-    <>
+    <motion.div>
       <div className={styles.lead__img__container}>
         <motion.div
           className={styles.lead__img__caption}
-          variants={LeadImgVariants}
+          variants={leadImgVariants}
           initial="initial"
           animate="animate"
         >
@@ -34,7 +30,7 @@ const HomeComponent = () => {
         </p>
         <motion.div
           className={styles.about__btn}
-          variants={BtnVariants}
+          variants={btnVariants}
           whileHover="hover"
         >
           <Link href="/about">Read more</Link>
@@ -74,7 +70,7 @@ const HomeComponent = () => {
         <DarkAnimatedSVG />
         <motion.div
           className={styles.projects__btn}
-          variants={BtnVariants}
+          variants={btnVariants}
           whileHover="hover"
         >
           <Link href="/projects">Projects</Link>
@@ -86,7 +82,7 @@ const HomeComponent = () => {
           <div className={styles.border}>Front End Development done right!</div>
         </div>
       </div>
-    </>
+    </motion.div>
   );
 };
 export default HomeComponent;
