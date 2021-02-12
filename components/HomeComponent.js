@@ -32,13 +32,15 @@ const HomeComponent = () => {
           like-minded coleagues. Thorough and precise at any given task, with
           keen interest in technology, web applications and user experience.
         </p>
-        <motion.div
-          className={styles.about__btn}
-          variants={btnVariants}
-          whileHover="hover"
-        >
-          <Link href="/about">Read more</Link>
-        </motion.div>
+        <Link href="/about">
+          <motion.div
+            className={styles.about__btn}
+            variants={btnVariants}
+            whileHover="hover"
+          >
+            Read more
+          </motion.div>
+        </Link>
       </section>
 
       <div className={styles.contact__img__container}>
@@ -72,13 +74,15 @@ const HomeComponent = () => {
         </p>
         <p>Feel free to check them out!</p>
         <DarkAnimatedSVG />
-        <motion.div
-          className={styles.projects__btn}
-          variants={btnVariants}
-          whileHover="hover"
-        >
-          <Link href="/projects">Projects</Link>
-        </motion.div>
+        <Link href="/projects">
+          <motion.div
+            className={styles.projects__btn}
+            variants={btnVariants}
+            whileHover="hover"
+          >
+            Projects
+          </motion.div>
+        </Link>
       </section>
 
       <div className={styles.closing__img__container}>

@@ -14,6 +14,15 @@
   min-width: 25vw;
 }
 
+.contact__fieldset__large {
+  display: flex;
+  flex-direction: column;
+  border: none;
+  margin: 0;
+  padding: 0;
+  min-width: 55vw;
+}
+
 .contact__input {
   height: 25px;
   margin-bottom: 12px;

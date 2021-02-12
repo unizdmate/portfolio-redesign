@@ -2,11 +2,17 @@ import styles from "../styles/ContactForm.module.css";
 import { motion } from "framer-motion";
 import { btnVariants } from "../animations/variants";
 
-const ContactForm = () => {
+const ContactForm = ({ type }) => {
   return (
     <div className={styles.contact__container}>
       <form className={styles.contact__form}>
-        <fieldset className={styles.contact__fieldset}>
+        <fieldset
+          className={
+            type === "large"
+              ? styles.contact__fieldset__large
+              : styles.contact__fieldset
+          }
+        >
           <input
             className={styles.contact__input}
             type="text"

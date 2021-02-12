@@ -6,35 +6,43 @@ import { navLinkVariants } from "../animations/variants";
 const Navbar = () => {
   return (
     <div className={styles.navbar__container}>
-      <motion.h2
-        className={styles.logo}
-        variants={navLinkVariants}
-        whileHover="hover"
-      >
-        <Link href="/">mate krezic</Link>
-      </motion.h2>
+      <Link href="/">
+        <motion.h2
+          className={styles.logo}
+          variants={navLinkVariants}
+          whileHover="hover"
+        >
+          mate krezic
+        </motion.h2>
+      </Link>
       <div className={styles.navbar__items}>
-        <motion.li
-          className={styles.navbar__item}
-          variants={navLinkVariants}
-          whileHover="hover"
-        >
-          <Link href="/about">about me</Link>
-        </motion.li>
-        <motion.li
-          className={styles.navbar__item}
-          variants={navLinkVariants}
-          whileHover="hover"
-        >
-          <Link href="/contact">contact me</Link>
-        </motion.li>
-        <motion.li
-          className={styles.navbar__item}
-          variants={navLinkVariants}
-          whileHover="hover"
-        >
-          <Link href="/projects">projects</Link>
-        </motion.li>
+        <Link href="/about">
+          <motion.li
+            className={styles.navbar__item}
+            variants={navLinkVariants}
+            whileHover="hover"
+          >
+            about me
+          </motion.li>
+        </Link>
+        <Link href="/contact">
+          <motion.li
+            className={styles.navbar__item}
+            variants={navLinkVariants}
+            whileHover="hover"
+          >
+            contact me
+          </motion.li>
+        </Link>
+        <Link href="/projects">
+          <motion.li
+            className={styles.navbar__item}
+            variants={navLinkVariants}
+            whileHover="hover"
+          >
+            projects
+          </motion.li>
+        </Link>
       </div>
     </div>
   );

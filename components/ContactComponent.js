@@ -1,9 +1,10 @@
 import React from "react";
+import ContactForm from "./ContactForm";
 
 const ContactComponent = () => {
   return (
     <div>
-      <h2>Contact me</h2>
+      <ContactForm type="large" />
     </div>
   );
 };

@@ -123,13 +123,15 @@ const AboutmeComponent = () => {
         <p>
           <i>Mate Krezic, at your service</i>
         </p>
-        <div
-          className={styles.contact__btn}
-          onDragStart={(e) => e.preventDefault()}
-          onContextMenu={(e) => e.preventDefault()}
-        >
-          <Link href="/contact">Feel free to contact me!</Link>
-        </div>
+        <Link href="/contact">
+          <div
+            className={styles.contact__btn}
+            onDragStart={(e) => e.preventDefault()}
+            onContextMenu={(e) => e.preventDefault()}
+          >
+            Feel free to contact me!
+          </div>
+        </Link>
         <div className={styles.aboutme__icons__container}>
           <a
             className={styles.aboutme__icon}
