@@ -3,14 +3,20 @@ import styles from "../styles/HomeComponent.module.css";
 import ContactForm from "./ContactForm";
 import Link from "next/link";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 const HomeComponent = () => {
   return (
     <>
       <div className={styles.lead__img__container}>
-        <div className={styles.lead__img__caption}>
+        <motion.div
+          className={styles.lead__img__caption}
+          initial={{ scale: 0 }}
+          animate={{ scale: 1 }}
+          transition={{ duration: 1.5 }}
+        >
           <div className={styles.border}>Front End Development done right!</div>
-        </div>
+        </motion.div>
       </div>
 
       <section className={styles.about__section}>
