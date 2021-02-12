@@ -8,13 +8,24 @@ import {
   faTwitterSquare,
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  aboutItemsLeftVariants,
+  aboutItemsCenterVariants,
+  aboutItemsRightVariants,
+  personContainerVariants,
+} from "../animations/variants";
 
 const AboutmeComponent = () => {
   return (
     <motion.div className={styles.aboutme__page}>
       <div className={styles.aboutme__container}>
         <div className={styles.aboutme__items}>
-          <div className={styles.aboutme__items__left}>
+          <motion.div
+            className={styles.aboutme__items__left}
+            variants={aboutItemsLeftVariants}
+            initial="initial"
+            animate="animate"
+          >
             <h3>Personal info</h3>
             <p>
               <b>Short bio: </b>Born in Zadar, Croatia on August 24th, 1986.
@@ -33,10 +44,15 @@ const AboutmeComponent = () => {
               journalist and sales representative. Very optimistic and
               enthusiastic about future endeavors in web development.
             </p>
-          </div>
+          </motion.div>
         </div>
         <div className={styles.aboutme__items}>
-          <div className={styles.aboutme__items__center}>
+          <motion.div
+            className={styles.aboutme__items__center}
+            variants={aboutItemsCenterVariants}
+            initial="initial"
+            animate="animate"
+          >
             <h3>Education</h3>
             <p>
               <b>Degree: </b>Attended University of Zadar from 2017 to 2020 and
@@ -50,10 +66,15 @@ const AboutmeComponent = () => {
               Styled Components, Framer Motion, React Modal, Apollo Client and
               GraphQL.
             </p>
-          </div>
+          </motion.div>
         </div>
         <div className={styles.aboutme__items}>
-          <div className={styles.aboutme__items__right}>
+          <motion.div
+            className={styles.aboutme__items__right}
+            variants={aboutItemsRightVariants}
+            initial="initial"
+            animate="animate"
+          >
             <h3>Employment history</h3>
             <p>
               <b>Freelance online journalist: </b> Mostly working for
@@ -80,10 +101,15 @@ const AboutmeComponent = () => {
               end of the contract, decided to enroll to university IT program
               and terminated employment.
             </p>
-          </div>
+          </motion.div>
         </div>
       </div>
-      <div className={styles.aboutme__personal__container}>
+      <motion.div
+        className={styles.aboutme__personal__container}
+        variants={personContainerVariants}
+        initial="initial"
+        animate="animate"
+      >
         <div className={styles.aboutme__img__container}>
           <Image
             src="/profile.jpg"
@@ -132,7 +158,7 @@ const AboutmeComponent = () => {
             <FontAwesomeIcon icon={faLinkedin} />
           </a>
         </div>
-      </div>
+      </motion.div>
     </motion.div>
   );
 };

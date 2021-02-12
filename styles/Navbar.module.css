@@ -21,6 +21,10 @@
   cursor: pointer;
 }
 
+.logo:active {
+  transform: translateY(5px);
+}
+
 .navbar__items {
   display: flex;
   flex-direction: row;

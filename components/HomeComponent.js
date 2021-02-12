@@ -4,7 +4,11 @@ import ContactForm from "./ContactForm";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { LightAnimatedSVG, DarkAnimatedSVG } from "../animations/svg";
-import { leadImgVariants, btnVariants } from "../animations/variants";
+import {
+  leadImgVariants,
+  btnVariants,
+  closingCaptionVariants,
+} from "../animations/variants";
 
 const HomeComponent = () => {
   return (
@@ -78,9 +82,14 @@ const HomeComponent = () => {
       </section>
 
       <div className={styles.closing__img__container}>
-        <div className={styles.closing__img__caption}>
+        <motion.div
+          className={styles.closing__img__caption}
+          variants={closingCaptionVariants}
+          initial="initial"
+          animate="animate"
+        >
           <div className={styles.border}>Front End Development done right!</div>
-        </div>
+        </motion.div>
       </div>
     </motion.div>
   );
