@@ -4,6 +4,11 @@ import ContactForm from "./ContactForm";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { LightAnimatedSVG, DarkAnimatedSVG } from "../animations/svg";
+import {
+  LeadImgVariants,
+  BtnVariants,
+  HomePageFadeInVariants,
+} from "../animations/variants";
 
 const HomeComponent = () => {
   return (
@@ -11,9 +16,9 @@ const HomeComponent = () => {
       <div className={styles.lead__img__container}>
         <motion.div
           className={styles.lead__img__caption}
-          initial={{ scale: 0 }}
-          animate={{ scale: 1 }}
-          transition={{ duration: 1.5 }}
+          variants={LeadImgVariants}
+          initial="initial"
+          animate="animate"
         >
           <div className={styles.border}>Front End Development done right!</div>
         </motion.div>
@@ -27,9 +32,13 @@ const HomeComponent = () => {
           like-minded coleagues. Thorough and precise at any given task, with
           keen interest in technology, web applications and user experience.
         </p>
-        <div className={styles.about__btn}>
+        <motion.div
+          className={styles.about__btn}
+          variants={BtnVariants}
+          whileHover="hover"
+        >
           <Link href="/about">Read more</Link>
-        </div>
+        </motion.div>
       </section>
 
       <div className={styles.contact__img__container}>
@@ -63,9 +72,13 @@ const HomeComponent = () => {
         </p>
         <p>Feel free to check them out!</p>
         <DarkAnimatedSVG />
-        <div className={styles.projects__btn}>
+        <motion.div
+          className={styles.projects__btn}
+          variants={BtnVariants}
+          whileHover="hover"
+        >
           <Link href="/projects">Projects</Link>
-        </div>
+        </motion.div>
       </section>
 
       <div className={styles.closing__img__container}>

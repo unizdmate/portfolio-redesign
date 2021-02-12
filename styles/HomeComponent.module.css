@@ -97,7 +97,6 @@
   background-color: #202020;
   color: #f0f0f0;
   cursor: pointer;
-  transition: all 0.15s ease-out;
 }
 
 .projects__btn {
@@ -111,13 +110,6 @@
   background-color: #202020;
   color: #f0f0f0;
   cursor: pointer;
-  transition: all 0.15s ease-out;
-}
-
-.about__btn:hover,
-.projects__btn:hover {
-  transition: all 0.15s ease-in;
-  transform: scale(1.0075);
 }
 
 .txt__container {

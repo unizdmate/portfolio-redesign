@@ -1,4 +1,6 @@
 import styles from "../styles/ContactForm.module.css";
+import { motion } from "framer-motion";
+import { BtnVariants } from "../animations/variants";
 
 const ContactForm = () => {
   return (
@@ -33,7 +35,13 @@ const ContactForm = () => {
             required
           ></textarea>
         </fieldset>
-        <div className={styles.submit__btn}>Submit</div>
+        <motion.div
+          className={styles.submit__btn}
+          variants={BtnVariants}
+          whileHover="hover"
+        >
+          Submit
+        </motion.div>
       </form>
     </div>
   );

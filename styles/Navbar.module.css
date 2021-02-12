@@ -19,7 +19,6 @@
   margin: 0;
   padding: 0;
   cursor: pointer;
-  transition: all 0.15s ease-out;
 }
 
 .navbar__items {
@@ -32,13 +31,6 @@
 
 .navbar__item {
   cursor: pointer;
-  transition: all 0.15s ease-out;
-}
-
-.logo:hover,
-.navbar__item:hover {
-  transition: all 0.15s ease-in;
-  transform: scale(1.0075);
 }
 
 @media only screen and (max-width: 800px) {
