@@ -2,8 +2,8 @@ import React from "react";
 import styles from "../styles/HomeComponent.module.css";
 import ContactForm from "./ContactForm";
 import Link from "next/link";
-import Image from "next/image";
 import { motion } from "framer-motion";
+import { LightAnimatedSVG, DarkAnimatedSVG } from "../animations/svg";
 
 const HomeComponent = () => {
   return (
@@ -40,23 +40,11 @@ const HomeComponent = () => {
 
       <section className={styles.contact__section}>
         <div className={styles.txt__container}>
-          <Image
-            src="/more01.svg"
-            width={75}
-            height={75}
-            onContextMenu={(e) => e.preventDefault()}
-            onDragStart={(e) => e.preventDefault()}
-          />
+          <LightAnimatedSVG />
           <p>Are you looking for someone reliable?</p>
           <p>Someone ready to work and willing to learn?</p>
           <p>Look no further!</p>
-          <Image
-            src="/more01.svg"
-            width={50}
-            height={50}
-            onContextMenu={(e) => e.preventDefault()}
-            onDragStart={(e) => e.preventDefault()}
-          />
+          <LightAnimatedSVG />
         </div>
         <ContactForm />
       </section>
@@ -68,25 +56,13 @@ const HomeComponent = () => {
       </div>
 
       <section className={styles.projects__section}>
-        <Image
-          src="/more02.svg"
-          width={75}
-          height={75}
-          onContextMenu={(e) => e.preventDefault()}
-          onDragStart={(e) => e.preventDefault()}
-        />
+        <DarkAnimatedSVG />
         <p>
           All the projects I've ever worked on in one place, including college
           final thesis and personal projects.
         </p>
         <p>Feel free to check them out!</p>
-        <Image
-          src="/more02.svg"
-          width={50}
-          height={50}
-          onContextMenu={(e) => e.preventDefault()}
-          onDragStart={(e) => e.preventDefault()}
-        />
+        <DarkAnimatedSVG />
         <div className={styles.projects__btn}>
           <Link href="/projects">Projects</Link>
         </div>
