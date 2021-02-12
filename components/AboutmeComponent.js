@@ -2,6 +2,12 @@ import Image from "next/image";
 import Link from "next/link";
 import styles from "../styles/AboutmeComponent.module.css";
 import { motion } from "framer-motion";
+import {
+  faInstagramSquare,
+  faLinkedin,
+  faTwitterSquare,
+} from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const AboutmeComponent = () => {
   return (
@@ -36,29 +42,27 @@ const AboutmeComponent = () => {
               <b>Degree: </b>Attended University of Zadar from 2017 to 2020 and
               earned bachelor's degree in Information Technologies on October
               23rd 2020. Developed a full-stack demo web application for Dog
-              Shelter as part of final thesis. Internship at Lemon Mint d.o.o.
-              based in Zadar.
+              Shelter as part of final thesis. Internship completed at Lemon
+              Mint d.o.o. based in Zadar.
             </p>
             <p>
               <b>Technologies: </b> HTML, CSS, JavaScript, React.js, Next.js,
-              Styled Components, Framer Motion, React Modal and Apollo Client on
-              front-end. Node.js, GraphQL, GraphQL Yoga Server and Prisma on
-              back-end.
+              Styled Components, Framer Motion, React Modal, Apollo Client and
+              GraphQL.
             </p>
           </div>
         </div>
         <div className={styles.aboutme__items}>
           <div className={styles.aboutme__items__right}>
-            {" "}
             <h3>Employment history</h3>
             <p>
-              <b>Freelance online journalist: </b> Mostly working for{" "}
+              <b>Freelance online journalist: </b> Mostly working for
               <a
                 href="https://ezadar.net.hr/info/2022589/impressum/"
                 target="_blank"
               >
                 eZadar.hr
-              </a>{" "}
+              </a>
               (part of RTL Media Group), contributed to over 3.000 articles
               related to sports, technology and politics. To this day still
               writing on daily basis and working as part-time deputy editor in
@@ -101,9 +105,32 @@ const AboutmeComponent = () => {
           <Link href="/contact">Feel free to contact me!</Link>
         </div>
         <div className={styles.aboutme__icons__container}>
-          <a className={styles.aboutme__icon}></a>
-          <a className={styles.aboutme__icon}></a>
-          <a className={styles.aboutme__icon}></a>
+          <a
+            className={styles.aboutme__icon}
+            href="https://www.instagram.com/matekrezic/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon icon={faInstagramSquare} />
+          </a>
+
+          <a
+            className={styles.aboutme__icon}
+            href="https://twitter.com/MateKrezic"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon icon={faTwitterSquare} />
+          </a>
+
+          <a
+            className={styles.aboutme__icon}
+            href="https://hr.linkedin.com/in/mate-krezi%C4%87-711731140"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon icon={faLinkedin} />
+          </a>
         </div>
       </div>
     </motion.div>
