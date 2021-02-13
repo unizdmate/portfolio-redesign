@@ -44,10 +44,10 @@ export const AboutMeTextRight = () => {
     <>
       <h3>Employment history</h3>
       <p>
-        <b>Freelance online journalist: </b> Mostly working for
+        <b>Freelance online journalist: </b> Mostly working for{" "}
         <a href="https://ezadar.net.hr/info/2022589/impressum/" target="_blank">
           eZadar.hr
-        </a>
+        </a>{" "}
         (part of RTL Media Group), contributed to over 3.000 articles related to
         sports, technology and politics. To this day still writing on daily
         basis and working as part-time deputy editor in chief.
