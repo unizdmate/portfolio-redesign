@@ -9,10 +9,9 @@ export const pageTransitionVariants = {
   animate: {
     opacity: 1,
     transition: {
-      duration: 1,
+      duration: 1.5,
       staggerChildren: 0.5,
       type: "tween",
-      ease: easing,
     },
   },
 };
@@ -25,7 +24,7 @@ export const leadImgVariants = {
   },
   animate: {
     scale: 1,
-    transition: { duration: 1.5, ease: easing },
+    transition: { duration: 2 },
   },
 };
 
@@ -37,7 +36,6 @@ export const closingCaptionVariants = {
     scale: 1.1,
     transition: {
       yoyo: Infinity,
-      ease: easing,
       duration: 1,
     },
   },
