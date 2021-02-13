@@ -41,6 +41,12 @@
   padding-right: 2.5rem;
 }
 
+.aboutme__items__left p,
+.aboutme__items__center p,
+.aboutme__items__right p {
+  margin-top: 20px;
+}
+
 .aboutme__personal__container {
   display: flex;
   flex-direction: column;
