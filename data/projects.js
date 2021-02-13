@@ -4,7 +4,7 @@ export const projects = [
     employer: "Lemon Mint d.o.o.",
     client: "Jadrolinija",
     jobDescription: [
-      "Designing and implementing UI components such as: Icon Button, Toggle Switch and Display Grid",
+      "Designing and implementing UI components such as: Icon Button, Loading Indicator and Toggle Switch",
       "Implementing React compoment to render all the coastal and island ports",
     ],
     techStack: ["React.js", "Apollo Client", "Styled Components"],
@@ -17,7 +17,7 @@ export const projects = [
     jobDescription: [
       "Designing and implementing Header and 'double' Footer components",
       "Designing and implementing PDF output",
-      "Implementing React compoment that takes all the user's data and calculates values od life insurance policy",
+      "Implementing React compoment that takes all the user's data and outputs value od life insurance policy",
     ],
     techStack: ["React.js", "Apollo Client", "Styled Components"],
   },
@@ -38,6 +38,7 @@ export const projects = [
       "Yoga GraphQL Server",
       "Prisma",
     ],
+    url: "https://github.com/unizdmate/dog-shelter-app",
   },
   {
     id: 4,
@@ -47,5 +48,6 @@ export const projects = [
       "Planning, designing and coding serverless web application",
     ],
     techStack: ["React.js", "Next.js", "Email.js"],
+    url: "https://github.com/unizdmate/portfolio-app",
   },
 ];
