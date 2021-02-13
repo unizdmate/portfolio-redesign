@@ -22,6 +22,10 @@ a {
   box-sizing: border-box;
 }
 
+*:focus {
+  outline: none;
+}
+
 p,
 h1,
 h2,

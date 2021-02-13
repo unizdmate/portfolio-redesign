@@ -86,14 +86,9 @@ const HomeComponent = () => {
       </section>
 
       <div className={styles.closing__img__container}>
-        <motion.div
-          className={styles.closing__img__caption}
-          variants={closingCaptionVariants}
-          initial="initial"
-          animate="animate"
-        >
+        <div className={styles.closing__img__caption}>
           <div className={styles.border}>Front End Development done right!</div>
-        </motion.div>
+        </div>
       </div>
     </motion.div>
   );
