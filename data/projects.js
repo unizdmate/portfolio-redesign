@@ -48,6 +48,6 @@ export const projects = [
       "Planning, designing and coding serverless web application",
     ],
     techStack: ["React.js", "Next.js", "Email.js"],
-    url: "https://github.com/unizdmate/portfolio-app",
+    url: "https://github.com/unizdmate/portfolio-redesign",
   },
 ];
