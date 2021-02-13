@@ -20,6 +20,7 @@ import {
   AboutTextCenter,
   AboutMeTextRight,
 } from "../data/texts";
+
 const AboutmeComponent = () => {
   return (
     <motion.div className={styles.aboutme__page}>
