@@ -1,7 +1,7 @@
 import React from "react";
 import ContactForm from "./ContactForm";
 import styles from "../styles/ContactForm.module.css";
-import { DarkAnimatedSVG, RightArrowAnimatedSVG } from "./../animations/svg";
+import { RightArrowAnimatedSVG } from "./../animations/svg";
 
 const ContactComponent = () => {
   return (
@@ -15,7 +15,7 @@ const ContactComponent = () => {
           <RightArrowAnimatedSVG />
         </div>
       </div>
-      <ContactForm type="large" />
+      <ContactForm source="large" />
     </div>
   );
 };

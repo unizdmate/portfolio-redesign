@@ -1,21 +1,46 @@
+import Router from "next/router";
+import emailjs from "emailjs-com";
+import { USER_ID, ACCESS_TOKEN, SERVICE_ID, TEMPLATE_ID } from "../utils/keys";
 import styles from "../styles/ContactForm.module.css";
 import { motion } from "framer-motion";
 import { btnVariants } from "../animations/variants";
 
-const ContactForm = ({ type }) => {
+const ContactForm = ({ source }) => {
+  const routeTo = (result) => {
+    Router.push({
+      pathname: "/",
+    });
+  };
+
+  const sendMail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(SERVICE_ID, TEMPLATE_ID, e.target, USER_ID)
+      .then((result) => {
+        routeTo(result);
+      });
+    (error) => {
+      console.log(error.text);
+    };
+    e.target.reset();
+  };
   return (
-    <div className={styles.contact__container}>
-      <form className={styles.contact__form}>
+    <div
+      className={styles.contact__container}
+      onContextMenu={(e) => e.preventDefault()}
+    >
+      <form className={styles.contact__form} method="post" onSubmit={sendMail}>
         <fieldset
           className={
-            type === "large"
+            source === "large"
               ? styles.contact__fieldset__large
               : styles.contact__fieldset
           }
         >
           <input
             className={
-              type === "large"
+              source === "large"
                 ? styles.contact__input__large
                 : styles.contact__input
             }
@@ -26,7 +51,7 @@ const ContactForm = ({ type }) => {
           ></input>
           <input
             className={
-              type === "large"
+              source === "large"
                 ? styles.contact__input__large
                 : styles.contact__input
             }
@@ -37,7 +62,7 @@ const ContactForm = ({ type }) => {
           ></input>
           <input
             className={
-              type === "large"
+              source === "large"
                 ? styles.contact__input__large
                 : styles.contact__input
             }
@@ -48,7 +73,7 @@ const ContactForm = ({ type }) => {
           ></input>
           <textarea
             className={
-              type === "large"
+              source === "large"
                 ? styles.contact__txt__area__large
                 : styles.contact__txt__area
             }
@@ -57,15 +82,16 @@ const ContactForm = ({ type }) => {
             required
           ></textarea>
         </fieldset>
-        <motion.div
+        <motion.button
           className={
-            type === "large" ? styles.submit__btn__large : styles.submit__btn
+            source === "large" ? styles.submit__btn__large : styles.submit__btn
           }
           variants={btnVariants}
           whileHover="hover"
+          type="submit"
         >
           Submit
-        </motion.div>
+        </motion.button>
       </form>
     </div>
   );
