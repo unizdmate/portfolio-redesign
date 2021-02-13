@@ -9,7 +9,7 @@ const SingleProject = ({ project }) => {
         <h3>{employer}</h3>
       </div>
       <div className={styles.single__project__client}>
-        <h4>Client: {client}</h4>
+        <h4>{client}</h4>
       </div>
       <div className={styles.txt__container}>
         <b>Job description: </b>

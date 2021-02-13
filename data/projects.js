@@ -2,7 +2,7 @@ export const projects = [
   {
     id: 1,
     employer: "Lemon Mint d.o.o.",
-    client: "Jadrolinija",
+    client: "Client: Jadrolinija",
     jobDescription: [
       "Designing and implementing UI components such as: Icon Button, Loading Indicator and Toggle Switch",
       "Implementing React compoment to render all the coastal and island ports",
@@ -13,7 +13,7 @@ export const projects = [
   {
     id: 2,
     employer: "Lemon Mint d.o.o.",
-    client: "Noor Takaful - Ethical Insurance",
+    client: "Client: Noor Takaful - Ethical Insurance",
     jobDescription: [
       "Designing and implementing Header and 'double' Footer components",
       "Designing and implementing PDF output",
@@ -45,7 +45,7 @@ export const projects = [
     employer: "Personal project",
     client: "Portfolio & CV App",
     jobDescription: [
-      "Planning, designing and coding serverless web application",
+      "Planning, designing, coding and deploying serverless web application",
     ],
     techStack: ["React.js", "Next.js", "Email.js", "Framer Motion"],
     url: "https://github.com/unizdmate/portfolio-redesign",
