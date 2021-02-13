@@ -5,11 +5,11 @@ const SingleProject = ({ project }) => {
 
   return (
     <div className={styles.single__project}>
-      <div className={styles.single__projext__employer}>
+      <div className={styles.single__project__employer}>
         <h3>{employer}</h3>
       </div>
       <div className={styles.single__project__client}>
-        <h4>{client}</h4>
+        <h4>Client: {client}</h4>
       </div>
       <div className={styles.txt__container}>
         <b>Job description: </b>
@@ -28,7 +28,7 @@ const SingleProject = ({ project }) => {
         ))}
       </div>
       {url ? (
-        <div className={styles.btn__continer}>
+        <div className={styles.btn__container}>
           <a href={url} target="_blank" rel="noopener noreferrer">
             Check out on GitHub
           </a>

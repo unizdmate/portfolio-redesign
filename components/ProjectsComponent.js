@@ -1,12 +1,8 @@
-import styles from "../styles/Projects.module.css";
+import styles from "../styles/ProjectsList.module.css";
 import ProjectsList from "./ProjectsList";
 
 const ProjectsComponent = () => {
-  return (
-    <div className={styles.projects__container}>
-      <ProjectsList />
-    </div>
-  );
+  return <ProjectsList />;
 };
 
 export default ProjectsComponent;

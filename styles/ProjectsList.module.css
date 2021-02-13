@@ -1,0 +1,11 @@
+.projects__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  color: #202020;
+  background-color: #f0f0f0;
+  margin-top: 2rem;
+}

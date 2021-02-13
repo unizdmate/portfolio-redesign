@@ -17,7 +17,7 @@ export const projects = [
     jobDescription: [
       "Designing and implementing Header and 'double' Footer components",
       "Designing and implementing PDF output",
-      "Implementing React compoment that takes all the user's data and outputs value od life insurance policy",
+      "Implementing React compoment that takes all the user's data and outputs value of life insurance policy",
     ],
     techStack: ["React.js", "Apollo Client", "Styled Components"],
   },
@@ -47,7 +47,7 @@ export const projects = [
     jobDescription: [
       "Planning, designing and coding serverless web application",
     ],
-    techStack: ["React.js", "Next.js", "Email.js"],
+    techStack: ["React.js", "Next.js", "Email.js", "Framer Motion"],
     url: "https://github.com/unizdmate/portfolio-redesign",
   },
 ];
