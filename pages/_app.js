@@ -14,6 +14,10 @@ import AboutmeComponent from "./../components/AboutmeComponent";
 import ContactComponent from "./../components/ContactComponent";
 import ProjectsComponent from "./../components/ProjectsComponent";
 
+//Importing all the componets in _app.js, that are rendered in /pages
+//without actually rendering them in _app.js solves the problem of
+//CSS glimmer on page transitions
+
 const routeChange = () => {
   // Temporary fix to avoid flash of unstyled content
   // during route transitions. Keep an eye on this
