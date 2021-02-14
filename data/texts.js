@@ -33,7 +33,7 @@ export const AboutTextCenter = () => {
       </p>
       <p>
         <b>Technologies: </b> HTML, CSS, JavaScript, React.js, Next.js, Styled
-        Components, Framer Motion, React Modal, Apollo Client and GraphQL.
+        Components, Framer Motion, React Modal, Apollo Client, GraphQL and Git.
       </p>
     </>
   );
