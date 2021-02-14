@@ -8,8 +8,8 @@ import "../styles/ProjectsList.module.css";
 import "../styles/SingleProject.module.css";
 import "../styles/globals.css";
 import { AnimatePresence } from "framer-motion";
-
 import Router from "next/router";
+import HomeComponent from "./../components/HomeComponent";
 
 const routeChange = () => {
   // Temporary fix to avoid flash of unstyled content
