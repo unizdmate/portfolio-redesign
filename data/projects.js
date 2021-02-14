@@ -1,7 +1,7 @@
 export const projects = [
   {
     id: 1,
-    employer: "Lemon Mint d.o.o.",
+    employer: "Lemon Mint d.o.o. (Internship program)",
     client: "Client: Jadrolinija",
     jobDescription: [
       "Designing and implementing UI components such as: Icon Button, Loading Indicator and Toggle Switch",
@@ -12,7 +12,7 @@ export const projects = [
 
   {
     id: 2,
-    employer: "Lemon Mint d.o.o.",
+    employer: "Lemon Mint d.o.o. (Internship program)",
     client: "Client: Noor Takaful - Ethical Insurance",
     jobDescription: [
       "Designing and implementing Header and 'double' Footer components",
