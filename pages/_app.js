@@ -10,6 +10,9 @@ import "../styles/globals.css";
 import { AnimatePresence } from "framer-motion";
 import Router from "next/router";
 import HomeComponent from "./../components/HomeComponent";
+import AboutmeComponent from "./../components/AboutmeComponent";
+import ContactComponent from "./../components/ContactComponent";
+import ProjectsComponent from "./../components/ProjectsComponent";
 
 const routeChange = () => {
   // Temporary fix to avoid flash of unstyled content
