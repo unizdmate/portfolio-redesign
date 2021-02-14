@@ -197,4 +197,12 @@
     height: 30px;
     font-size: 12px;
   }
+
+  .contact__container {
+    width: 100%;
+  }
+
+  .contact__fieldset {
+    width: 100%;
+  }
 }
