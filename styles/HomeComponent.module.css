@@ -156,8 +156,8 @@
     flex-direction: column;
   }
 
-  .about__section,
-  .contact__section,
+  .about__section p,
+  .contact__section p,
   .projects__section p {
     font-size: 14px;
     margin-bottom: 10px;
