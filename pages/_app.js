@@ -1,4 +1,11 @@
 import Layout from "../components/Layout";
+import "../styles/AboutmeComponent.module.css";
+import "../styles/ContactForm.module.css";
+import "../styles/Home.module.css";
+import "../styles/HomeComponent.module.css";
+import "../styles/Navbar.module.css";
+import "../styles/ProjectsList.module.css";
+import "../styles/SingleProject.module.css";
 import "../styles/globals.css";
 import { AnimatePresence } from "framer-motion";
 
