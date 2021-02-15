@@ -7,7 +7,7 @@ export const projects = [
       "Designing and implementing UI components such as: Icon Button, Loading Indicator and Toggle Switch",
       "Implementing React compoment to render all the coastal and island ports",
     ],
-    techStack: ["React.js", "Apollo Client", "Styled Components"],
+    techStack: ["React.js", "Apollo Client", "Styled Components", "Git"],
   },
 
   {
@@ -19,7 +19,7 @@ export const projects = [
       "Designing and implementing PDF output",
       "Implementing React compoment that takes all the user's data and outputs value of life insurance policy",
     ],
-    techStack: ["React.js", "Apollo Client", "Styled Components"],
+    techStack: ["React.js", "Apollo Client", "Styled Components", "Git"],
   },
 
   {
@@ -47,7 +47,24 @@ export const projects = [
     jobDescription: [
       "Planning, designing, coding and deploying serverless web application",
     ],
-    techStack: ["React.js", "Next.js", "Email.js", "Framer Motion"],
+    techStack: [
+      "React.js",
+      "Next.js",
+      "CSS Modules",
+      "Email.js",
+      "Framer Motion",
+      "Git",
+    ],
     url: "https://github.com/unizdmate/portfolio-redesign",
+  },
+  {
+    id: 5,
+    employer: "Personal project",
+    client: "Tilting Glass",
+    jobDescription: [
+      "Just having some fun playing around with glassmorphism design style and React-Tilt 😁",
+    ],
+    techStack: ["React.js", "CSS Modules", "React-Tilt", "Git"],
+    url: "https://github.com/unizdmate/tilting-glass",
   },
 ];
