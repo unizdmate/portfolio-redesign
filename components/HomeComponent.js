@@ -4,15 +4,11 @@ import ContactForm from "./ContactForm";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { LightAnimatedSVG, DarkAnimatedSVG } from "../animations/svg";
-import {
-  leadImgVariants,
-  btnVariants,
-  closingCaptionVariants,
-} from "../animations/variants";
+import { leadImgVariants, btnVariants } from "../animations/variants";
 
 const HomeComponent = () => {
   return (
-    <motion.div>
+    <motion.main>
       <div className={styles.lead__img__container}>
         <motion.div
           className={styles.lead__img__caption}
@@ -90,7 +86,7 @@ const HomeComponent = () => {
           <div className={styles.border}>Front End Development done right!</div>
         </div>
       </div>
-    </motion.div>
+    </motion.main>
   );
 };
 export default HomeComponent;

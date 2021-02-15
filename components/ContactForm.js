@@ -26,7 +26,7 @@ const ContactForm = ({ source }) => {
     e.target.reset();
   };
   return (
-    <div
+    <main
       className={styles.contact__container}
       onContextMenu={(e) => e.preventDefault()}
     >
@@ -93,7 +93,7 @@ const ContactForm = ({ source }) => {
           Submit
         </motion.button>
       </form>
-    </div>
+    </main>
   );
 };
 

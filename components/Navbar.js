@@ -5,7 +5,7 @@ import { navLinkVariants } from "../animations/variants";
 
 const Navbar = () => {
   return (
-    <div className={styles.navbar__container}>
+    <nav className={styles.navbar__container}>
       <Link href="/">
         <motion.h2
           className={styles.logo}
@@ -15,7 +15,7 @@ const Navbar = () => {
           mate krezic
         </motion.h2>
       </Link>
-      <div className={styles.navbar__items}>
+      <section className={styles.navbar__items}>
         <Link href="/about">
           <motion.li
             className={styles.navbar__item}
@@ -43,8 +43,8 @@ const Navbar = () => {
             projects
           </motion.li>
         </Link>
-      </div>
-    </div>
+      </section>
+    </nav>
   );
 };
 

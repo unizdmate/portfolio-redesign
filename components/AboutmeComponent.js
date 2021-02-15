@@ -23,9 +23,9 @@ import {
 
 const AboutmeComponent = () => {
   return (
-    <motion.div className={styles.aboutme__page}>
-      <div className={styles.aboutme__container}>
-        <div className={styles.aboutme__items}>
+    <motion.main className={styles.aboutme__page}>
+      <article className={styles.aboutme__container}>
+        <section className={styles.aboutme__items}>
           <motion.div
             className={styles.aboutme__items__left}
             variants={aboutItemsLeftVariants}
@@ -34,8 +34,9 @@ const AboutmeComponent = () => {
           >
             <AboutTextLeft />
           </motion.div>
-        </div>
-        <div className={styles.aboutme__items}>
+        </section>
+
+        <section className={styles.aboutme__items}>
           <motion.div
             className={styles.aboutme__items__center}
             variants={aboutItemsCenterVariants}
@@ -44,8 +45,9 @@ const AboutmeComponent = () => {
           >
             <AboutTextCenter />
           </motion.div>
-        </div>
-        <div className={styles.aboutme__items}>
+        </section>
+
+        <section className={styles.aboutme__items}>
           <motion.div
             className={styles.aboutme__items__right}
             variants={aboutItemsRightVariants}
@@ -54,9 +56,10 @@ const AboutmeComponent = () => {
           >
             <AboutMeTextRight />
           </motion.div>
-        </div>
-      </div>
-      <motion.div
+        </section>
+      </article>
+
+      <motion.section
         className={styles.aboutme__personal__container}
         variants={personContainerVariants}
         initial="initial"
@@ -72,9 +75,11 @@ const AboutmeComponent = () => {
             onContextMenu={(e) => e.preventDefault()}
           />
         </div>
+
         <p>
           <i>Mate Krezic, at your service</i>
         </p>
+
         <Link href="/contact">
           <motion.div
             className={styles.contact__btn}
@@ -86,36 +91,43 @@ const AboutmeComponent = () => {
             Feel free to contact me!
           </motion.div>
         </Link>
-        <div className={styles.aboutme__icons__container}>
-          <a
+
+        <section className={styles.aboutme__icons__container}>
+          <motion.a
             className={styles.aboutme__icon}
+            variants={btnVariants}
+            whileHover="hover"
             href="https://www.instagram.com/matekrezic/"
             target="_blank"
             rel="noopener noreferrer"
           >
             <FontAwesomeIcon icon={faInstagramSquare} />
-          </a>
+          </motion.a>
 
-          <a
+          <motion.a
             className={styles.aboutme__icon}
+            variants={btnVariants}
+            whileHover="hover"
             href="https://twitter.com/MateKrezic"
             target="_blank"
             rel="noopener noreferrer"
           >
             <FontAwesomeIcon icon={faTwitterSquare} />
-          </a>
+          </motion.a>
 
-          <a
+          <motion.a
             className={styles.aboutme__icon}
+            variants={btnVariants}
+            whileHover="hover"
             href="https://hr.linkedin.com/in/mate-krezi%C4%87-711731140"
             target="_blank"
             rel="noopener noreferrer"
           >
             <FontAwesomeIcon icon={faLinkedin} />
-          </a>
-        </div>
-      </motion.div>
-    </motion.div>
+          </motion.a>
+        </section>
+      </motion.section>
+    </motion.main>
   );
 };
 

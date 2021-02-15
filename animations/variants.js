@@ -100,3 +100,21 @@ export const personContainerVariants = {
     transition: { delay: 1, duration: 3, type: "tween", ease: easing },
   },
 };
+
+export const imageVariants = {
+  initial: {
+    filter: {},
+  },
+};
+
+//Contact component animations
+
+export const contactComponentVariants = {
+  initial: {
+    opacity: 0,
+  },
+  animate: {
+    opacity: 1,
+    transition: { duration: 1.5 },
+  },
+};
