@@ -1,9 +1,18 @@
 import styles from "../styles/SingleProject.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faExternalLinkAlt, faGlobe } from "@fortawesome/free-solid-svg-icons";
 
 const SingleProject = ({ project }) => {
-  const { id, employer, client, jobDescription, techStack, url } = project;
+  const {
+    id,
+    employer,
+    client,
+    jobDescription,
+    techStack,
+    gitUrl,
+    webUrl,
+  } = project;
 
   return (
     <article className={styles.single__project}>
@@ -33,17 +42,32 @@ const SingleProject = ({ project }) => {
         ))}
       </section>
 
-      {url ? (
+      {gitUrl ? (
         <div className={styles.btn__container}>
           <a
             className={styles.single__project__icon}
-            href={url}
+            href={gitUrl}
             target="_blank"
             rel="noopener noreferrer"
           >
             <p>Check out on GitHub</p>
             <div className={styles.single__project__icon__container}>
               <FontAwesomeIcon icon={faGithub} />
+            </div>
+          </a>
+        </div>
+      ) : null}
+      {webUrl ? (
+        <div className={styles.btn__container}>
+          <a
+            className={styles.single__project__icon}
+            href={webUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <p>Check out Live</p>
+            <div className={styles.single__project__icon__container}>
+              <FontAwesomeIcon icon={faExternalLinkAlt} />
             </div>
           </a>
         </div>

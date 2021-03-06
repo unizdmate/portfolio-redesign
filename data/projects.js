@@ -38,7 +38,7 @@ export const projects = [
       "Yoga GraphQL Server",
       "Prisma",
     ],
-    url: "https://github.com/unizdmate/dog-shelter-app",
+    gitUrl: "https://github.com/unizdmate/dog-shelter-app",
   },
   {
     id: 4,
@@ -55,7 +55,8 @@ export const projects = [
       "Framer Motion",
       "Git",
     ],
-    url: "https://github.com/unizdmate/portfolio-redesign",
+    gitUrl: "https://github.com/unizdmate/portfolio-redesign",
+    webUrl: "https://matekrezic.vercel.app/",
   },
   {
     id: 5,
@@ -65,6 +66,7 @@ export const projects = [
       "Just having some fun playing around with glassmorphism design style and React-Tilt 😁",
     ],
     techStack: ["React.js", "CSS Modules", "React-Tilt", "Git"],
-    url: "https://github.com/unizdmate/tilting-glass",
+    gitUrl: "https://github.com/unizdmate/tilting-glass",
+    webUrl: "https://tilting-glass.vercel.app/",
   },
 ];
