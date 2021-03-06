@@ -10,14 +10,9 @@ const HomeComponent = () => {
   return (
     <motion.main>
       <div className={styles.lead__img__container}>
-        <motion.div
-          className={styles.lead__img__caption}
-          variants={leadImgVariants}
-          initial="initial"
-          animate="animate"
-        >
+        <div className={styles.lead__img__caption}>
           <div className={styles.border}>Front End Development done right!</div>
-        </motion.div>
+        </div>
       </div>
 
       <section className={styles.about__section}>

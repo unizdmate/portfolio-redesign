@@ -41,7 +41,7 @@ const ProjectsList = () => {
   return (
     <main className={styles.projects__container}>
       {projects.map((project) => (
-        <FadeInWhenVisible>
+        <FadeInWhenVisible threshold={0.1}>
           <SingleProject key={project.id} project={project} />
         </FadeInWhenVisible>
       ))}
