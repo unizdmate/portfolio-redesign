@@ -10,7 +10,6 @@ export const pageTransitionVariants = {
     opacity: 1,
     transition: {
       duration: 1.5,
-      staggerChildren: 0.5,
       type: "tween",
     },
   },
@@ -18,15 +17,7 @@ export const pageTransitionVariants = {
 
 // Home Component Animations
 
-export const leadImgVariants = {
-  initial: {
-    scale: 0,
-  },
-  animate: {
-    scale: 1,
-    transition: { duration: 2 },
-  },
-};
+export const leadImgVariants = {};
 
 export const closingCaptionVariants = {
   initial: {
