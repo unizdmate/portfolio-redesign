@@ -12,7 +12,9 @@ const Navbar = () => {
           variants={navLinkVariants}
           whileHover="hover"
         >
+          <span aria-hidden="true">mate krezic</span>
           mate krezic
+          <span aria-hidden="true">mate krezic</span>
         </motion.h2>
       </Link>
       <section className={styles.navbar__items}>
