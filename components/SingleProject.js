@@ -18,8 +18,8 @@ const SingleProject = ({ project }) => {
       <section className={styles.txt__container}>
         <b>Job description: </b>
         {jobDescription.map((description) => (
-          <ul>
-            <li key={id}>{description}</li>
+          <ul key={description}>
+            <li>{description}</li>
           </ul>
         ))}
       </section>
@@ -27,8 +27,8 @@ const SingleProject = ({ project }) => {
       <section className={styles.txt__container}>
         <b>Technolgies: </b>
         {techStack.map((technology) => (
-          <ul>
-            <li key={id}>{technology}</li>
+          <ul key={technology}>
+            <li>{technology}</li>
           </ul>
         ))}
       </section>
