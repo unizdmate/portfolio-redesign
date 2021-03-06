@@ -16,7 +16,7 @@ import ProjectsComponent from "./../components/ProjectsComponent";
 
 //Importing all the componets in _app.js, that are rendered in /pages
 //without actually rendering them in _app.js solves the problem of
-//CSS glimmer on page transitions
+//CSS glitch on page transitions
 
 function MyApp({ Component, pageProps, router }) {
   return (
