@@ -17,7 +17,18 @@ export const pageTransitionVariants = {
 
 // Home Component Animations
 
-export const leadImgVariants = {};
+export const navbarVariants = {
+  initial: {
+    opacity: 0,
+  },
+  animate: {
+    opacity: 1,
+    transition: {
+      duration: 1.5,
+      type: "tween",
+    },
+  },
+};
 
 export const closingCaptionVariants = {
   initial: {

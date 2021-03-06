@@ -1,11 +1,16 @@
 import styles from "../styles/Navbar.module.css";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { navLinkVariants } from "../animations/variants";
+import { navLinkVariants, navbarVariants } from "../animations/variants";
 
 const Navbar = () => {
   return (
-    <nav className={styles.navbar__container}>
+    <motion.nav
+      className={styles.navbar__container}
+      variants={navbarVariants}
+      initial="initial"
+      animate="animate"
+    >
       <Link href="/">
         <motion.h2
           className={styles.logo}
@@ -46,7 +51,7 @@ const Navbar = () => {
           </motion.li>
         </Link>
       </section>
-    </nav>
+    </motion.nav>
   );
 };
 
