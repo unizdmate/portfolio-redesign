@@ -20,7 +20,7 @@ const ContactComponent = () => {
       animate="animate"
     >
       <div className={styles.title}>
-        <h1>Feel free to contact me!</h1>
+        <div className={styles.border}>Feel free to contact me!</div>
       </div>
       <div className={styles.contact__form__container__large}>
         <section className={styles.contact__txt__container}>
