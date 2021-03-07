@@ -1,7 +1,11 @@
+import styles from "../styles/AboutmeComponent.module.css";
+
 export const AboutTextLeft = () => {
   return (
     <>
-      <h3>Personal info</h3>
+      <div className={styles.title}>
+        <div className={styles.border}>Personal info</div>
+      </div>
       <p>
         <b>Short bio: </b>Born in Zadar, Croatia on August 24th, 1986. Attended
         "Gimnazija Franje Petrića" high school from 2001 to 2005 and graduated
@@ -24,7 +28,9 @@ export const AboutTextLeft = () => {
 export const AboutTextCenter = () => {
   return (
     <>
-      <h3>Education</h3>
+      <div className={styles.title}>
+        <div className={styles.border}>Education</div>
+      </div>
       <p>
         <b>Degree: </b>Attended University of Zadar from 2017 to 2020 and earned
         bachelor's degree in Information Technologies on October 23rd 2020.
@@ -42,7 +48,9 @@ export const AboutTextCenter = () => {
 export const AboutMeTextRight = () => {
   return (
     <>
-      <h3>Employment history</h3>
+      <div className={styles.title}>
+        <div className={styles.border}>Employment history</div>
+      </div>
       <p>
         <b>Freelance online journalist: </b> Mostly working for{" "}
         <a href="https://ezadar.net.hr/info/2022589/impressum/" target="_blank">

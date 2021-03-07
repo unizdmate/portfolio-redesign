@@ -17,7 +17,7 @@ const SingleProject = ({ project }) => {
   return (
     <article className={styles.single__project}>
       <div className={styles.single__project__employer}>
-        <h3>{employer}</h3>
+        <div className={styles.border}>{employer}</div>
       </div>
 
       <div className={styles.single__project__client}>
