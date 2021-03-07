@@ -4,9 +4,9 @@
   align-items: center;
   width: 100%;
   background-color: #f0f0f0;
-  background: radial-gradient(
-    circle,
-    rgba(255, 238, 181, 0.35) 10%,
+  background: linear-gradient(
+    90deg,
+    rgba(255, 238, 181, 0.35) 0%,
     rgba(255, 221, 158, 0.35) 50%,
     rgba(255, 197, 179, 0.35) 90%
   );
@@ -70,20 +70,18 @@
 
 .aboutme__img__container {
   margin-top: 2rem;
-  border: 1px solid #f0f0f0;
   border-radius: 50%;
   overflow: hidden;
   background-color: #202020;
   opacity: 80%;
   margin-bottom: 2rem;
-  filter: grayscale(100%);
-  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.24), 0 1px 5px 0 rgba(0, 0, 0, 0.19);
+  filter: grayscale(75%);
   transition: all 0.5s ease-out;
 }
 
 .aboutme__img__container:hover {
-  filter: grayscale(60%);
-  transition: all 0.5s ease-out;
+  filter: grayscale(50%);
+  transition: all 0.5s ease-in;
 }
 
 .contact__btn {
