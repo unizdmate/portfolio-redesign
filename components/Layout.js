@@ -10,7 +10,11 @@ const Layout = ({ children }) => {
         <meta property="og:url" content="https://matekrezic.vercel.app/" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Mate Krezic | Portfolio" />
-        <meta property="og:description" content="Mate Krezic" />
+        <meta property="og:description" content="Mate Krezic portfolio app" />
+        <meta
+          property="og:keywords"
+          content="Mate Krezic, frontend, web development, zadar"
+        />
       </Head>
       <Navbar />
       {children}
