@@ -11,10 +11,6 @@ const Layout = ({ children }) => {
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Mate Krezic | Portfolio" />
         <meta property="og:description" content="Mate Krezic" />
-        <meta
-          property="og:image"
-          content="https://matekrezic.vercel.app/_next/image?url=%2FtestImg.jpg"
-        />
       </Head>
       <Navbar />
       {children}
