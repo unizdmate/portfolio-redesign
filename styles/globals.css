@@ -36,8 +36,16 @@ h5 {
   padding: 0;
 }
 
-::-webkit-scrollbar {
-  display: none;
+body::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: #202020;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #f0f0f0;
 }
 
 li {

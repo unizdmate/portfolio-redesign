@@ -9,12 +9,13 @@ const Layout = ({ children }) => {
         <link rel="icon" href="/favicon.ico" />
         <meta property="og:url" content="https://matekrezic.vercel.app/" />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Mate Krezic | Portfolio" />
-        <meta property="og:description" content="Mate Krezic portfolio app" />
+        <meta charset="utf-8" />
         <meta
-          property="og:keywords"
-          content="Mate Krezic, frontend, web development, zadar"
+          name="description"
+          content="Frontend, Web Development, React js, HTML, CSS, JavaScript, Mate Krezic"
         />
+        <meta name="robots" content="index, follow" />
+        <meta name="author" content="Mate Krezic" />
       </Head>
       <Navbar />
       {children}
