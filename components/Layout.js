@@ -18,7 +18,7 @@ const Layout = ({ children }) => {
         <meta charset="utf-8" />
         <meta
           name="description"
-          content="Frontend, Web Development, React js, HTML, CSS, JavaScript, Mate Krezic"
+          content="Mate Krezic portfolio & CV app. Developed in Zadar with ❤"
         />
         <meta name="robots" content="index, follow" />
         <meta name="author" content="Mate Krezic" />
