@@ -8,7 +8,13 @@ const Layout = ({ children }) => {
         <title>Mate Krezic | Portfolio</title>
         <link rel="icon" href="/favicon.ico" />
         <meta property="og:url" content="https://matekrezic.vercel.app/" />
-        <meta property="og:type" content="website" />
+        <meta property="og:type" content="website" key="ogtype" />
+        <meta property="og:image" content="/cover.jpg" key="ogimage" />
+        <meta
+          property="og:site_name"
+          content="Mate Krezic | Portfolio"
+          key="ogsitename"
+        />
         <meta charset="utf-8" />
         <meta
           name="description"
