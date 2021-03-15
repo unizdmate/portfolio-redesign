@@ -157,6 +157,11 @@
   .contact__section {
     flex-direction: column;
   }
+  .about__section,
+  .projects__section {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
 
   .about__section p,
   .contact__section p,
