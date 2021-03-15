@@ -42,6 +42,8 @@
 
 .about__section,
 .projects__section {
+  padding-left: 20rem;
+  padding-right: 20rem;
   background-color: #f0f0f0;
   color: #202020;
   display: flex;
