@@ -42,7 +42,7 @@
 .contact__form__container__large {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: flex-start;
 }
 
 .contact__container {
