@@ -10,7 +10,7 @@ const about = () => {
       initial="initial"
       animate="animate"
       exit="initial"
-      style={{minHeight="calc(100vh-55px)"}}
+      style={{ minHeight: "calc(100vh-55px)" }}
     >
       <AboutmeComponent />
     </motion.div>
