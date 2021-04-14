@@ -57,8 +57,7 @@ export const AboutMeTextRight = () => {
           eZadar.hr
         </a>{" "}
         (part of RTL Media Group), contributed to over 3.000 articles related to
-        sports, technology and politics. To this day still writing on daily
-        basis and working as part-time deputy editor in chief.
+        sports, technology and politics from 2009 to 2021.
       </p>
       <p>
         <b>Sales representative: </b> From 2011 to 2015 worked as sales
@@ -71,6 +70,10 @@ export const AboutMeTextRight = () => {
         d.o.o., company specialized in HVAC, as head of sales. By the end of the
         contract, decided to enroll to university IT program and terminated
         employment.
+      </p>
+      <p>
+        <b>Software engineer: </b> As of April 2021 employed at DeepIT as
+        software engineer.
       </p>
     </>
   );
