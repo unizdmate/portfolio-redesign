@@ -14,12 +14,12 @@ export const AboutTextLeft = () => {
       </p>
       <p>
         <b>About me: </b>Ambitious React developer with passion for learning
-        and, more importantly, improving on daily basis, looking to join a team
-        of like-minded coleagues. Thorough and precise at any given task, with
-        keen interest in technology, web applications and user experience. A
-        Great team player with excellent communication skills mastered during
-        decade-long career as online journalist and sales representative. Very
-        optimistic and enthusiastic about future endeavors in web development.
+        and, more importantly, improving on daily basis. Thorough and precise at
+        any given task, with keen interest in technology, web applications and
+        user experience. A Great team player with excellent communication skills
+        mastered during decade-long career as online journalist and sales
+        representative. Very optimistic and enthusiastic about future endeavors
+        in web development.
       </p>
     </>
   );

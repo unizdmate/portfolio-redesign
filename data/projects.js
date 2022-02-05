@@ -58,15 +58,15 @@ export const projects = [
     gitUrl: "https://github.com/unizdmate/portfolio-redesign",
     webUrl: "https://matekrezic.vercel.app/",
   },
-  {
-    id: 5,
-    employer: "Personal project",
-    client: "Tilting Glass",
-    jobDescription: [
-      "Just having some fun playing around with glassmorphism design style and React-Tilt 😁",
-    ],
-    techStack: ["React.js", "CSS Modules", "React-Tilt", "Git"],
-    gitUrl: "https://github.com/unizdmate/tilting-glass",
-    webUrl: "https://tilting-glass.vercel.app/",
-  },
+  // {
+  //   id: 5,
+  //   employer: "Personal project",
+  //   client: "Tilting Glass",
+  //   jobDescription: [
+  //     "Just having some fun playing around with glassmorphism design style and React-Tilt 😁",
+  //   ],
+  //   techStack: ["React.js", "CSS Modules", "React-Tilt", "Git"],
+  //   gitUrl: "https://github.com/unizdmate/tilting-glass",
+  //   webUrl: "https://tilting-glass.vercel.app/",
+  // },
 ];
