@@ -9,6 +9,11 @@ import { leadImgVariants, btnVariants } from "../animations/variants";
 const HomeComponent = () => {
   return (
     <motion.main>
+      <div className={styles.border}>Under construction.</div>
+    </motion.main>
+  );
+  return (
+    <motion.main>
       <div className={styles.lead__img__container}>
         <div className={styles.lead__img__caption}>
           <div className={styles.border}>Front End Development done right!</div>
